@@ -12,6 +12,17 @@ class LoginViewController: UIViewController {
    @IBOutlet weak var userNameTextField: UITextField!
    @IBOutlet weak var passwordTextField: UITextField!
    
+   private let viewModel: AuthViewModel
+   
+   init(viewModel: AuthViewModel) {
+      self.viewModel = viewModel
+      super.init(nibName: nil, bundle: nil)
+   }
+   
+   required init?(coder: NSCoder) {
+      fatalError("init(coder:) has not been implemented")
+   }
+   
    override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,11 +31,22 @@ class LoginViewController: UIViewController {
 
    @IBAction func loginButtonTapped(_ sender: Any) {
       if userNameTextField.text != "" && passwordTextField.text != "" {
-         print("nextPage")
-         let vc = HomeViewController()
-         let navigationController = UINavigationController(rootViewController: vc)
-         navigationController.modalPresentationStyle = .fullScreen
-         self.present(navigationController, animated: true)
+         
+         viewModel.login(email: userNameTextField.text!, password: passwordTextField.text!) { [weak self] result in
+            DispatchQueue.main.async {
+               switch result {
+               case .success(let success):
+                  print("nextPage")
+                  let vc = HomeViewController()
+                  let navigationController = UINavigationController(rootViewController: vc)
+                  navigationController.modalPresentationStyle = .fullScreen
+                  self?.present(navigationController, animated: true)
+               case .failure(let failure):
+                  print("failed")
+               }
+            }
+         }
+         
       } else {
          print("failed")
       }
