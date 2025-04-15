@@ -1,0 +1,6 @@
+framework module Pods_SpaceFlightNewsTests {
+  umbrella header "Pods-SpaceFlightNewsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
