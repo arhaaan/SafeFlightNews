@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
    var window: UIWindow?
+    private let dependencyContainer = DependencyContainer()
 
 
    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -20,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
               
               window = UIWindow(windowScene: windowScene)
                       
-                      let vc = LoginViewController()
+       let vc = UINavigationController(rootViewController: dependencyContainer.makeLoginViewController())
                       window?.rootViewController = vc
                       window?.makeKeyAndVisible()
    }

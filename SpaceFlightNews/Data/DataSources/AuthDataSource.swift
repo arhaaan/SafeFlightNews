@@ -16,23 +16,48 @@ class AuthDataSource: AuthRepositoryProtocol {
    }
    
    func login(credentials: AuthCredentials, completion: @escaping (Result<AuthUser, any Error>) -> Void) {
-      auth0Service.login(
-         email: credentials.email,
-         password: credentials.password,
-         completion: completion
-      )
+//      auth0Service.login(
+//         email: credentials.email,
+//         password: credentials.password,
+//         completion: completion
+//      )
+       auth0Service.login(email: credentials.email, password: credentials.password) { result in
+           switch result {
+           case .success(let success):
+               completion(.success(success))
+           case .failure(let failure):
+               completion(.failure(failure))
+           }
+       }
    }
    
    func signUp(credentials: AuthCredentials, completion: @escaping (Result<AuthUser, any Error>) -> Void) {
-      auth0Service.signUp(
-         email: credentials.email,
-         password: credentials.password,
-         completion: completion
-      )
+//      auth0Service.signUp(
+//         email: credentials.email,
+//         password: credentials.password,
+//         completion: completion
+//      )
+       
+       auth0Service.signUp(email: credentials.email, password: credentials.password) { result in
+           switch result {
+           case .success(let success):
+               completion(.success(success))
+           case .failure(let failure):
+               completion(.failure(failure))
+           }
+       }
    }
-   
-   func logout(completion: @escaping (Result<Void, any Error>) -> Void) {
-      auth0Service.logout(completion: completion)
-   }
-
+    
+    func logout(completion: @escaping (Result<Void, any Error>) -> Void) {
+        auth0Service.logout { result in
+            switch result {
+            case .success(let success):
+                completion(.success(success))
+            case .failure(let failure):
+                completion(.failure(failure))
+            }
+        }
+    }
+    
+    
 }

@@ -11,7 +11,7 @@ import Foundation
 class Auth0Service {
    private let credentialsManager = CredentialsManager(authentication: Auth0.authentication())
    
-   func login(email: String, password: String, completion: @escaping (Result<AuthUser, Error>) -> Void) {
+   func login(email: String, password: String, completion: @escaping (Result<AuthUser>) -> Void) {
       Auth0
          .authentication()
          .login(
@@ -23,43 +23,43 @@ class Auth0Service {
          .start { result in
             switch result {
             case .success(let credentials):
-               self.credentialsManager.store(credentials: credentials) { error in
-                  if let error = error {
-                     completion(.failure(error))
-                  } else {
-                     completion(.success(self.mapToAuthUser(credentials: credentials)))
-                  }
-               }
+                print(credentials)
+                self.credentialsManager.store(credentials: credentials)
+                completion(.success(result: self.mapToAuthUser(credentials: credentials)))
             case .failure(let error):
-               completion(.failure(error))
+                print(error.localizedDescription)
+                completion(.failure(error: error))
             }
          }
    }
    
-   func signUp(email: String, password: String, completion: @escaping (Result<AuthUser, Error>) -> Void) {
+   func signUp(email: String, password: String, completion: @escaping (Result<AuthUser>) -> Void) {
       Auth0
          .authentication()
          .createUser(
             email: email,
             password: password,
-            connection: "Username-Password-Authentication"
+            connection: "Username-Password-Authentication",
+            userMetadata: ["first_name": "John", "last_name": "Appleseed"]
          )
          .start { result in
             switch result {
             case .success:
+                print(result)
                self.login(email: email, password: password, completion: completion)
             case .failure(let error):
-               completion(.failure(error))
+                print(error.localizedDescription)
+                completion(.failure(error: error))
             }
          }
    }
    
-   func logout(completion: @escaping (Result<Void, Error>) -> Void) {
+   func logout(completion: @escaping (Result<Void>) -> Void) {
       do {
          try credentialsManager.clear() // Assuming clear is a synchronous method
-         completion(.success(()))
+          completion(.success(result: ()))
       } catch {
-         completion(.failure(error))
+          completion(.failure(error: error))
       }
    }
    

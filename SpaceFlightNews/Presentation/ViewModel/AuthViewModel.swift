@@ -32,4 +32,20 @@ class AuthViewModel {
          }
       }
    }
+    
+    func register(email: String, password: String, completion: @escaping(Result<AuthUser, Error>) -> Void) {
+        authRepository.signUp(credentials: AuthCredentials(email: email, password: password)) { [weak self] result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let success):
+                    print(result)
+                    self?.authUser = success
+                    completion(.success(success))
+                case .failure(let failure):
+                    print(failure.localizedDescription)
+                    completion(.failure(failure))
+                }
+            }
+        }
+    }
 }

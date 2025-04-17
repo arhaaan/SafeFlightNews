@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		55EFEFFE2C90B89B250AA094 /* Pods_SpaceFlightNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E48284670210A094DBC4D75 /* Pods_SpaceFlightNews.framework */; };
 		836D73E413732060E9028764 /* Pods_SpaceFlightNewsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CD93B6150E2CD4A39724D5B /* Pods_SpaceFlightNewsTests.framework */; };
+		8B7148522DAF639C00FDEF8D /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7148512DAF639C00FDEF8D /* DependencyContainer.swift */; };
 		CED2BDD8FB18BCCF4B418EA2 /* Pods_SpaceFlightNews_SpaceFlightNewsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2011983868DA8D71A29792C5 /* Pods_SpaceFlightNews_SpaceFlightNewsUITests.framework */; };
 		EE19DD0D2DAE8A7C00629C74 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE19DD0C2DAE8A7C00629C74 /* Auth0.plist */; };
 		EE19DD0F2DAE8FC300629C74 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19DD0E2DAE8FC300629C74 /* Auth.swift */; };
@@ -63,6 +64,7 @@
 		549B5766412A0A2076A83B00 /* Pods-SpaceFlightNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceFlightNews.release.xcconfig"; path = "Target Support Files/Pods-SpaceFlightNews/Pods-SpaceFlightNews.release.xcconfig"; sourceTree = "<group>"; };
 		696DFD4A3CBED255F8621620 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceFlightNews-SpaceFlightNewsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpaceFlightNews-SpaceFlightNewsUITests/Pods-SpaceFlightNews-SpaceFlightNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		71187CF1C61982DCBF432A92 /* Pods-SpaceFlightNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceFlightNews.debug.xcconfig"; path = "Target Support Files/Pods-SpaceFlightNews/Pods-SpaceFlightNews.debug.xcconfig"; sourceTree = "<group>"; };
+		8B7148512DAF639C00FDEF8D /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		957835F46F78268A7C6FAD4D /* Pods-SpaceFlightNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceFlightNewsTests.release.xcconfig"; path = "Target Support Files/Pods-SpaceFlightNewsTests/Pods-SpaceFlightNewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE19DD0C2DAE8A7C00629C74 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		EE19DD0E2DAE8FC300629C74 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 			children = (
 				EE98E3152DAD70EC00E6CCC4 /* AppDelegate.swift */,
 				EE98E3172DAD70EC00E6CCC4 /* SceneDelegate.swift */,
+				8B7148512DAF639C00FDEF8D /* DependencyContainer.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7148522DAF639C00FDEF8D /* DependencyContainer.swift in Sources */,
 				EE1BDF132DAEB954003FC063 /* AuthDataSource.swift in Sources */,
 				EE98E3502DAE339400E6CCC4 /* LoginViewController.swift in Sources */,
 				EE98E3542DAE520100E6CCC4 /* RegisterViewController.swift in Sources */,

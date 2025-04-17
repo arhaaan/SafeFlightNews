@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
    @IBOutlet weak var userNameTextField: UITextField!
    @IBOutlet weak var passwordTextField: UITextField!
    
+    private let dependencyContainer = DependencyContainer()
    private let viewModel: AuthViewModel
    
    init(viewModel: AuthViewModel) {
@@ -53,7 +54,7 @@ class LoginViewController: UIViewController {
    }
    
    @IBAction func signUpButtonTapped(_ sender: Any) {
-      let vc = RegisterViewController()
+       let vc = UINavigationController(rootViewController: dependencyContainer.makeRegisterViewController())
       vc.modalPresentationStyle = .fullScreen
       self.present(vc, animated: true)
    }
