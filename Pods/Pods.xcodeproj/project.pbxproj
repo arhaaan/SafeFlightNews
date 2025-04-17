@@ -1,0 +1,1724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06B9928CE474B81AACF0240428D081AB /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4384A2E20E69593CFACD5F79AD9FC724 /* Identity.swift */; };
+		0777D1302FC27E26C7044305904CFEA4 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76517FBBA5CB457D3D07DDFB0E6D1BC7 /* AuthenticationError.swift */; };
+		07C1A1EAC63D2B437FD2D4B3EB59D4DD /* AuthSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC67C6114276F39ECAD3DDBD138425BA /* AuthSession.swift */; };
+		0888E64B8EA4D1C44A23EC84B9F0576C /* Pods-SpaceFlightNewsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9CB3EC78A7663655AC5C84717C4D053 /* Pods-SpaceFlightNewsTests-dummy.m */; };
+		09B4C78D089CD4F969A30695957B0F3D /* Auth0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB00A3C63C78F558C9957C89A57C7AFB /* Auth0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A0E9342C6BCD64C0C5F6D82FBF0F056 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C851DE612D067873C6C1DBF9A13180 /* SafariServices.framework */; };
+		0C3E122E81326D4A2908BE60DEBAE615 /* SimpleKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F8A1D9539AB7BAB8B6F27A37821A201 /* SimpleKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C7460E53E148D683A88FB7EA8E14148 /* _ObjectiveWebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E62F8FAF047061469E38B121DF09115 /* _ObjectiveWebAuth.swift */; };
+		0D3B7B9021EAACF9E0B360848834A5C2 /* WebAuthError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE11CB31A03D21FB7DB35A792DB4EBB /* WebAuthError.swift */; };
+		0E01194848C894B16C5D528ABA386B73 /* _ObjectiveAuthenticationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8089A6DA27C79CACA84E2EBEBDB8DA7D /* _ObjectiveAuthenticationAPI.swift */; };
+		0E2710EFEB6013E7AD96736FAFBCF5A7 /* BaseWebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10640FF14DDDA0BAE3901AA24B060877 /* BaseWebAuth.swift */; };
+		11B7E11F32F78A519DCDBE7A0896BB82 /* OAuth2Grant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87A78DB6539717BB84084FF0452B867 /* OAuth2Grant.swift */; };
+		185AA7F3B0DAA1BD58F3EF12AFA4D044 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EB6573713F697CA0C8C5D3857EFB38 /* Foundation.framework */; };
+		1BDE27C129F6F6EA41772110B258BCC5 /* NSURL+Auth0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68446A9C3212B3CF0ACD264CFEF44928 /* NSURL+Auth0.swift */; };
+		1C5CDC0A5519701CD6150BBBC2E72B0A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712CFE41D8526C97A940D82DD3250D40 /* UserInfo.swift */; };
+		1E7809A920AE5990E979F96859B50E1B /* JWTDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F613BBF213D70ADED78D958A9A14E /* JWTDecode.swift */; };
+		22BA9096F0B3D1899F161A58924009D2 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA568E6154BE7BC29682237B6B292347 /* AuthProvider.swift */; };
+		251C76E7F3FC511CA099F0C46190B68C /* Auth0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E73E10C0026ABFD6D74B55A429D74A /* Auth0.swift */; };
+		25B90CE11328EB9B95C9544B354B18BB /* SilentSafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40CF0997A468CA6680C2678777549A1 /* SilentSafariViewController.swift */; };
+		27178CCB7E325184B06725C45E09B2AB /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B368FB948AD4946726E1B0C87ADA4 /* ResponseType.swift */; };
+		29DC39BCEF8F20F98DBB5C97AF901F4F /* String+URLSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401FFCEE11450DCECEDF6FD887DF455C /* String+URLSafe.swift */; };
+		2AEF5D670564735B0B90D4B6F5B4D7CF /* Telemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF48D0A987AF758ACE02CB84CE00003 /* Telemetry.swift */; };
+		2E24A58002B009F6A87A1EE8F8E0ED3D /* A0JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E765C23B77779DC9E41A06B583990F55 /* A0JWT.swift */; };
+		2FBCED58DF3D9F9766E4F749E46D6104 /* JWTDecode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD045E4FECD21C203F4888C54BEFCAF4 /* JWTDecode-dummy.m */; };
+		309B05E1D51141B6AF7EED3596F30A36 /* A0SimpleKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B40FDDEBB22CDC6AFB81FB5A53CC935 /* A0SimpleKeychain.m */; };
+		309ED4F92C4A1E6E4B9E9C2DB840FD0F /* TokenValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17F371D1C7D1B1D9A809FDAD271A782 /* TokenValidators.swift */; };
+		30D916E5B5DEF63A1B38A5ACC7273800 /* BioAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C227D484903DA59D5B882CC93B2967 /* BioAuthentication.swift */; };
+		3268B19B56E9DF2E3A6284C803690879 /* AuthenticationServicesSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CF5B3C98AF3F016CD08D173DC8447F /* AuthenticationServicesSession.swift */; };
+		3437119119F3CB0DE4153B0DECB63BA5 /* AuthTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65FF1E35BBB6E485C6D099850576911 /* AuthTransaction.swift */; };
+		39EB52E0D1241AC295CA829AE895EDA9 /* A0SimpleKeychain+RSAPublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F8A9048EEE7890F8D3CAAB329E13A /* A0SimpleKeychain+RSAPublicKey.swift */; };
+		39EC05BD73BE071606B2434324DFF966 /* WebAuthenticatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3427DCF597294BCB837E5A6472DB0E08 /* WebAuthenticatable.swift */; };
+		3AC556C5A01820D8AE91238C1BA6F2CD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923C41ACDBA736A6EDA5FDBF3BAA6542 /* Result.swift */; };
+		3F9131B74E895DB6CB4758011A535F76 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C23EF7EC939156EDC6A36C4477F2D2 /* Response.swift */; };
+		42C2E00C2EADEA7631411D0AB55607C2 /* Pods-SpaceFlightNewsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 110D07727E9E0615E2C910EC04973438 /* Pods-SpaceFlightNewsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44034803D11EA643D4D87526CCB1FB39 /* SafariSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26284971309659C6137DFC23B525ACE /* SafariSession.swift */; };
+		442E573ECC5C80A2572322FF55C77231 /* JWTDecode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1FBFA5659299730F7AE08D389A8A2B /* JWTDecode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44BF50427D726EDE2D39DAEA2F251CF4 /* UIApplication+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CAF3642D1018040B845CB1B4CF0059 /* UIApplication+Shared.swift */; };
+		4AC8E42318A85A68EFA5E45AF0F55702 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128F7E17E242CB67AC935A1072DBB468 /* ValidationError.swift */; };
+		4B9498B7639057810155A593CED6E635 /* _ObjectiveManagementAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336CF463560D100CBBB00773C7F2224F /* _ObjectiveManagementAPI.swift */; };
+		517B0E3E4B8DDA2146E0ABE98E4056F0 /* Loggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0291BE2F1428E25CBD13229C8DB2859D /* Loggable.swift */; };
+		5196469986E989B0EB9B79E3147D3135 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0EB0B9613D7579CABB55156B0C59D7 /* Logger.swift */; };
+		51C375A6535E90C3B0B25E5F202D3633 /* Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E1E41A2B8A2AB89B8642E076E1504 /* Management.swift */; };
+		5227CE3D5D89DAD2E9BB7527A7A7EF0C /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7181723BBFC6E97B4009144BA77E9 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-dummy.m */; };
+		5950C8F7669BFA603EE655C05709B3B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EB6573713F697CA0C8C5D3857EFB38 /* Foundation.framework */; };
+		5B50F636DDCA5B506C3B75EC465BFEE0 /* IDTokenSignatureValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEC140A0FE82D257A60C19D26EFB34F /* IDTokenSignatureValidator.swift */; };
+		5D6BE90324B7F3F30C6B579292863F11 /* A0ChallengeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04832FCD0BBD6D5A9CCC42D9217A687F /* A0ChallengeGenerator.m */; };
+		5F03648C6C50ECC757829CAAF585F9D1 /* Array+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E0C48753EFCC6E4D54F72B5B727B82 /* Array+Encode.swift */; };
+		6287B923ADC9D07DB692D53C85A542F5 /* Auth0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3558ADC0FF593D437A682268BA6CC549 /* Auth0-dummy.m */; };
+		62F3E87F5B607975EAD04984B156CCF7 /* ValidatorJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F7E4F3AFEC7BDADAF4B98E9EA0743A /* ValidatorJWT.swift */; };
+		63300EFB73BF605B9184C49E14DA486E /* A0SimpleKeychain+KeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 309A9382BE3E0BD3E85BAB6F1CC0FF7B /* A0SimpleKeychain+KeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64B11990DA8219D89F1B461F152AD7C4 /* JWK+RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFDC2AC67F20BDE4E967792459999A2 /* JWK+RSA.swift */; };
+		65DC7C253AF8B788060E075BE0361CE4 /* JWKS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB240BDA075E3DF539F4E3DBAB36285 /* JWKS.swift */; };
+		66C45CAFC52BC359B927B31689F456C5 /* ClaimValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4D33E43DC11B35C22CFC442336BA83 /* ClaimValidators.swift */; };
+		6D2EF2DD522E7B10277526A5E4C69129 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7FBA9266958E82727627B37B62CD7B /* Date.swift */; };
+		6F2CBF7B3772B946F1B49AEB5C80F0CC /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D664FA7D48233DF3E6058B905BE34FC /* LocalAuthentication.framework */; };
+		72ADCC623CE054A588EC43F7C0FBCA30 /* IDTokenValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FAFFA6DE531C513F8AA5ACC498F91 /* IDTokenValidator.swift */; };
+		72C4BD7892FC24963F5C8ED7B6841CD8 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C06B83514B449928B6AC69CF0361866 /* Authentication.swift */; };
+		7901ADDD895E4E5EA13A492BA0BE8418 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F67A9011BDB1A12FD8F4381AB911FA /* UIKit.framework */; };
+		7A04A0BAFFDCB228CFB7C6F788878658 /* NSError+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1621F24F091FE14FF687D4033490F7E2 /* NSError+Helper.swift */; };
+		7B0301BE403E370E66BE4A9AC6E5FE55 /* NSData+URLSafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666EBF7C76218E9195108476D1BD92AA /* NSData+URLSafe.swift */; };
+		7EBE0811DC1EAD17F77C215B9C947AD3 /* JWT+Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10AB05DF88074A8157D97F957D0A1E1 /* JWT+Header.swift */; };
+		82A3CC05665A518808EA2D24E3CE35AF /* Pods-SpaceFlightNews-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3D4F3B20A18A9AFFCABA49E9B94464D /* Pods-SpaceFlightNews-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84B132C0BFC5470021D698D42FFE8369 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D5E7361F778EB8FF2A01C567DF6A7D /* Errors.swift */; };
+		85D0E7DB3123A8C92856B95D8923BEEA /* SimpleKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F72664330F1023CFF3AE4EE26A5996B0 /* SimpleKeychain-dummy.m */; };
+		861D27B274EB2B0670723541AB74B53F /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA08AC4B9EF951DD36AD9B90C9E955 /* Credentials.swift */; };
+		87BDDA991B6EF10C7159B0BCDD29A957 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EB6573713F697CA0C8C5D3857EFB38 /* Foundation.framework */; };
+		8B2988E386A2A14A5B6D2F3B1F0204D2 /* SessionCallbackTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664628A863DDCB2F2184D52671BFA8AA /* SessionCallbackTransaction.swift */; };
+		9666CF553AA84768A327C578FC369574 /* IDTokenValidatorContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EA641F3D684EA692524C174A0F01B8 /* IDTokenValidatorContext.swift */; };
+		976F026FBDCAE28124CA576B46B05BE5 /* AuthenticationServicesSessionCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64E6BE6EEBC6A00AF3C83200F76307 /* AuthenticationServicesSessionCallback.swift */; };
+		983F38C44A2732DC1FC87CC0D75FFDBC /* JSONObjectPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDF3F82A9044402CB5518B52297C4BC /* JSONObjectPayload.swift */; };
+		A3064897B75EA4E5FC3EF621FBAF1AE1 /* ManagementError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4D217293BCB113A2D2516006C636C5 /* ManagementError.swift */; };
+		A69B57FB02EB9049370390E89D0FBB3A /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CADDC08D7262FD5D517A02A5E03069C /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A720396F7A992189F37AD472C3E65749 /* A0RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 776740326B86F4697C1277A27DB5F0FD /* A0RSA.m */; };
+		AA2B2838D593A03A44B499741A14DE28 /* Pods-SpaceFlightNews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0777A287B09BF289459CFE9D8E77FA /* Pods-SpaceFlightNews-dummy.m */; };
+		AA5EE4A662514EB68948E84D4215E7A0 /* Auth0Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B73C25F216CBC84F39F0D2FF6E94964 /* Auth0Authentication.swift */; };
+		AC50852D20A734D773303A8241B5D7D7 /* MobileWebAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4804C97E30BA0997E0C6ADC6502582 /* MobileWebAuth.swift */; };
+		ACAE4CB7CC7B1CAFD489B598012317D1 /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A82EA575192C68115C6367850D9877 /* Handlers.swift */; };
+		B54FF26F8316EF3F1142AD9AE1981882 /* UserPatchAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399EBB626C927709058A8875985571F2 /* UserPatchAttributes.swift */; };
+		B689DCAD8FA6305370E69BFF5F9EF723 /* CredentialsManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38478E6F30620890B18678E26C882C8E /* CredentialsManagerError.swift */; };
+		B6E7C892E0778ED6AC2BA3ACF118F731 /* AuthCancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9822590755CAE9A61CBDEDC2F553CBD /* AuthCancelable.swift */; };
+		B7B6BCD109BB566370F61E70F5DB52CD /* ControllerModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D893B228A0EF82B57E2B0C1AFBA9103 /* ControllerModalPresenter.swift */; };
+		BA57B43B0C79BF19A141265EE7B4D8A8 /* SimpleKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D10F05A9A21B97F745D594E33A6836 /* SimpleKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDE9E42862D361E28F11D6F37088FAF6 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B7A70801E1953FE13AD89D610AA2C /* Profile.swift */; };
+		C07ACEE9007793D523134B950A968E0D /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66204660A1F97A7F69B22A4352D976AD /* Requestable.swift */; };
+		C1371C1B4ABFD55304C389B1037327F4 /* BaseAuthTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB790ED4828B8FE30A31346129B9EDD3 /* BaseAuthTransaction.swift */; };
+		C63A91FF65765012A1060E2D0D009EC7 /* Auth0.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F43DE9A5C42B3E64AF1936E9EEFE2CA /* Auth0.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C666207700DF07370E1F42C18B1D4B32 /* Optional+DebugDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0E8F3FA6D08449F607C7ACCB305B39 /* Optional+DebugDescription.swift */; };
+		CB55D16524C37AFFFD7E35E6350749BF /* A0RSA.h in Headers */ = {isa = PBXBuildFile; fileRef = 038C4431B0091B59C79326F68BD1E00D /* A0RSA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD57193827E7CEC17C5DC7657856B3C6 /* SessionTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E4C89203168938EF17B444B6130191 /* SessionTransaction.swift */; };
+		CDD65E445576844FFA3A2613A99DEB72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EB6573713F697CA0C8C5D3857EFB38 /* Foundation.framework */; };
+		D0F4BFC83D5E22B2C293726440D8C851 /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDBB301D01626A5E2602D0248093C55 /* CredentialsManager.swift */; };
+		D14565D8AFBB62689527C64EB6A3F549 /* NativeAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9E64911EA004AAD88DED98668F852C /* NativeAuth.swift */; };
+		D6B58CEF1024E16E13C0AAA21D2CF6FC /* Auth0Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7820A032CC82399C4B6429A097E92D23 /* Auth0Error.swift */; };
+		DA7A4F9E64BCF8CFCB824F83FBC9B006 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A55FCCD31206412C53ACEEE9A2DC6E /* Users.swift */; };
+		E88446313CA2FB6294D462DF936921D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EB6573713F697CA0C8C5D3857EFB38 /* Foundation.framework */; };
+		EB280BECC10873B27DA843E8C1E8A123 /* A0SHA.h in Headers */ = {isa = PBXBuildFile; fileRef = 967FA09057138FF99B608EDC03C59DC2 /* A0SHA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECF0B90A13042DAF51112218C18D2FBD /* A0SimpleKeychain+KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = F660F3B313F63BF57CE9A29EF934CE70 /* A0SimpleKeychain+KeyPair.m */; };
+		EF489123614FA99F077D7FF840E9F0D5 /* TransactionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669071C8CD69F63BF5109754C567BE88 /* TransactionStore.swift */; };
+		F0B4B8DBD760ADABF37C6374F4680085 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EB6573713F697CA0C8C5D3857EFB38 /* Foundation.framework */; };
+		F1318B96FB75306B2A560071AC2C38C3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5821FCE8666918BBA3EF7838C4F78A12 /* Request.swift */; };
+		F37A2562B151944CA11D1FB301960092 /* JWTAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452B7DBBFB777CF1340BAE437ED26659 /* JWTAlgorithm.swift */; };
+		F4C39C93E517EA4240DE2835FACA606A /* NSURLComponents+OAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD431D4DEDE59961A94D9F36C8F2947C /* NSURLComponents+OAuth2.swift */; };
+		F5F876E9EA7A90EA8B6F153DA71F66B5 /* A0SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = 76197E9D6B0B0AC1F20BDA7460D0E490 /* A0SHA.m */; };
+		F866E4BCB6A82CA8A8E82AA194717533 /* A0ChallengeGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7EA354149B983C0E4676D09CD4F0EC /* A0ChallengeGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA894B047A3A6114FFEC5EFD854E047C /* A0SimpleKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B2A9A63076642FD99747CF1089DE4E /* A0SimpleKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD2D989797700914041B381CF55C7F35 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D893D87086EBB2C8DE787C3676A8DAFF /* JWT.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		306391252E57641616DFB8DF3357C5D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E1F0E7CBECE226FC294E79C21B0033;
+			remoteInfo = JWTDecode;
+		};
+		3AD7C2050EC239B8EA8569F80BDD4CEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E1F0E7CBECE226FC294E79C21B0033;
+			remoteInfo = JWTDecode;
+		};
+		3BB8D4551223D54CA2E670C0074509BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 192AEFA366AAFE1F45B918C022FE489C;
+			remoteInfo = SimpleKeychain;
+		};
+		5DC3D4C68668E0D1A136CF2BCB391D72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 192AEFA366AAFE1F45B918C022FE489C;
+			remoteInfo = SimpleKeychain;
+		};
+		6E9DA3CF31269487C4BA3F5A3B64E9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 192AEFA366AAFE1F45B918C022FE489C;
+			remoteInfo = SimpleKeychain;
+		};
+		A60538B5D20AF2A2F4A3DE255773863D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6A440A37D50015E369921294617C612;
+			remoteInfo = Auth0;
+		};
+		AB8F75F170D70B71F427A49AE488070A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E1F0E7CBECE226FC294E79C21B0033;
+			remoteInfo = JWTDecode;
+		};
+		C966E98AAA15EC62369F101F0F939FDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6A440A37D50015E369921294617C612;
+			remoteInfo = Auth0;
+		};
+		CD72107DD2FA08461172613D7F87D0EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC65C6D1A0272356836056789304E4B0;
+			remoteInfo = "Pods-SpaceFlightNews";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0291BE2F1428E25CBD13229C8DB2859D /* Loggable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loggable.swift; path = Auth0/Loggable.swift; sourceTree = "<group>"; };
+		038C4431B0091B59C79326F68BD1E00D /* A0RSA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0RSA.h; path = Auth0/ObjectiveC/A0RSA.h; sourceTree = "<group>"; };
+		04305A1C44016E80B0DC6A5844753B97 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpaceFlightNews-SpaceFlightNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		04832FCD0BBD6D5A9CCC42D9217A687F /* A0ChallengeGenerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0ChallengeGenerator.m; path = Auth0/ObjectiveC/A0ChallengeGenerator.m; sourceTree = "<group>"; };
+		04B99EEF3A1D00B141029F00B07560DC /* SimpleKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleKeychain.modulemap; sourceTree = "<group>"; };
+		054B7A70801E1953FE13AD89D610AA2C /* Profile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Auth0/Profile.swift; sourceTree = "<group>"; };
+		06C23EF7EC939156EDC6A36C4477F2D2 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Auth0/Response.swift; sourceTree = "<group>"; };
+		09F67A9011BDB1A12FD8F4381AB911FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0CADDC08D7262FD5D517A02A5E03069C /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpaceFlightNews-SpaceFlightNewsUITests-umbrella.h"; sourceTree = "<group>"; };
+		0DEC140A0FE82D257A60C19D26EFB34F /* IDTokenSignatureValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IDTokenSignatureValidator.swift; path = Auth0/IDTokenSignatureValidator.swift; sourceTree = "<group>"; };
+		0E62F8FAF047061469E38B121DF09115 /* _ObjectiveWebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveWebAuth.swift; path = Auth0/_ObjectiveWebAuth.swift; sourceTree = "<group>"; };
+		10640FF14DDDA0BAE3901AA24B060877 /* BaseWebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseWebAuth.swift; path = Auth0/BaseWebAuth.swift; sourceTree = "<group>"; };
+		110D07727E9E0615E2C910EC04973438 /* Pods-SpaceFlightNewsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpaceFlightNewsTests-umbrella.h"; sourceTree = "<group>"; };
+		11EB6573713F697CA0C8C5D3857EFB38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		11FEC3353834722630EEAB6199647B38 /* Auth0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Auth0.debug.xcconfig; sourceTree = "<group>"; };
+		128F7E17E242CB67AC935A1072DBB468 /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = JWTDecode/ValidationError.swift; sourceTree = "<group>"; };
+		151B368FB948AD4946726E1B0C87ADA4 /* ResponseType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseType.swift; path = Auth0/ResponseType.swift; sourceTree = "<group>"; };
+		1621F24F091FE14FF687D4033490F7E2 /* NSError+Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSError+Helper.swift"; path = "Auth0/NSError+Helper.swift"; sourceTree = "<group>"; };
+		166B79C1E0D1CA1D8348646B4AFF752F /* Pods-SpaceFlightNewsTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SpaceFlightNewsTests"; path = Pods_SpaceFlightNewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		175780063F42F039BD93905AE4E6954A /* Pods-SpaceFlightNews.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpaceFlightNews.modulemap"; sourceTree = "<group>"; };
+		19E4C89203168938EF17B444B6130191 /* SessionTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionTransaction.swift; path = Auth0/SessionTransaction.swift; sourceTree = "<group>"; };
+		1D664FA7D48233DF3E6058B905BE34FC /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/LocalAuthentication.framework; sourceTree = DEVELOPER_DIR; };
+		1DDBB301D01626A5E2602D0248093C55 /* CredentialsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsManager.swift; path = Auth0/CredentialsManager.swift; sourceTree = "<group>"; };
+		20CAF3642D1018040B845CB1B4CF0059 /* UIApplication+Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+Shared.swift"; path = "Auth0/UIApplication+Shared.swift"; sourceTree = "<group>"; };
+		219E1E41A2B8A2AB89B8642E076E1504 /* Management.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Management.swift; path = Auth0/Management.swift; sourceTree = "<group>"; };
+		21E2C55A4EC775FA300C2323DDAB0045 /* JWTDecode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWTDecode.debug.xcconfig; sourceTree = "<group>"; };
+		2BD66EE55B6BE098B618AF14E6CB2947 /* Pods-SpaceFlightNewsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpaceFlightNewsTests-Info.plist"; sourceTree = "<group>"; };
+		309A9382BE3E0BD3E85BAB6F1CC0FF7B /* A0SimpleKeychain+KeyPair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "A0SimpleKeychain+KeyPair.h"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.h"; sourceTree = "<group>"; };
+		31CB5192AD62246B2C0079FD1ABD61B9 /* JWTDecode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JWTDecode.modulemap; sourceTree = "<group>"; };
+		336CF463560D100CBBB00773C7F2224F /* _ObjectiveManagementAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveManagementAPI.swift; path = Auth0/_ObjectiveManagementAPI.swift; sourceTree = "<group>"; };
+		3427DCF597294BCB837E5A6472DB0E08 /* WebAuthenticatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebAuthenticatable.swift; path = Auth0/WebAuthenticatable.swift; sourceTree = "<group>"; };
+		34D2531244061C2A1806CD8730BAFC3D /* SimpleKeychain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKeychain.debug.xcconfig; sourceTree = "<group>"; };
+		3558ADC0FF593D437A682268BA6CC549 /* Auth0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Auth0-dummy.m"; sourceTree = "<group>"; };
+		35FB80469D838C9E3660736FE5978F42 /* Auth0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Auth0.release.xcconfig; sourceTree = "<group>"; };
+		37F7BDD8098D65AF728298718EF8DDFB /* Auth0-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Auth0-Info.plist"; sourceTree = "<group>"; };
+		38478E6F30620890B18678E26C882C8E /* CredentialsManagerError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CredentialsManagerError.swift; path = Auth0/CredentialsManagerError.swift; sourceTree = "<group>"; };
+		399EBB626C927709058A8875985571F2 /* UserPatchAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserPatchAttributes.swift; path = Auth0/UserPatchAttributes.swift; sourceTree = "<group>"; };
+		3A1FBFA5659299730F7AE08D389A8A2B /* JWTDecode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWTDecode-umbrella.h"; sourceTree = "<group>"; };
+		3AF7181723BBFC6E97B4009144BA77E9 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpaceFlightNews-SpaceFlightNewsUITests-dummy.m"; sourceTree = "<group>"; };
+		3C06B83514B449928B6AC69CF0361866 /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Auth0/Authentication.swift; sourceTree = "<group>"; };
+		3D0777A287B09BF289459CFE9D8E77FA /* Pods-SpaceFlightNews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpaceFlightNews-dummy.m"; sourceTree = "<group>"; };
+		3D105784488DF1F2C56FC4230686655D /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpaceFlightNews-SpaceFlightNewsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3F43DE9A5C42B3E64AF1936E9EEFE2CA /* Auth0.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Auth0.h; path = Auth0/Auth0.h; sourceTree = "<group>"; };
+		401FFCEE11450DCECEDF6FD887DF455C /* String+URLSafe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+URLSafe.swift"; path = "Auth0/String+URLSafe.swift"; sourceTree = "<group>"; };
+		42576BCA4A469AFD9E6BD032CE2FB92C /* JWTDecode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWTDecode.release.xcconfig; sourceTree = "<group>"; };
+		4384A2E20E69593CFACD5F79AD9FC724 /* Identity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identity.swift; path = Auth0/Identity.swift; sourceTree = "<group>"; };
+		43E73E10C0026ABFD6D74B55A429D74A /* Auth0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0.swift; path = Auth0/Auth0.swift; sourceTree = "<group>"; };
+		452B7DBBFB777CF1340BAE437ED26659 /* JWTAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTAlgorithm.swift; path = Auth0/JWTAlgorithm.swift; sourceTree = "<group>"; };
+		48CF5B3C98AF3F016CD08D173DC8447F /* AuthenticationServicesSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationServicesSession.swift; path = Auth0/AuthenticationServicesSession.swift; sourceTree = "<group>"; };
+		4B73C25F216CBC84F39F0D2FF6E94964 /* Auth0Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0Authentication.swift; path = Auth0/Auth0Authentication.swift; sourceTree = "<group>"; };
+		4D893B228A0EF82B57E2B0C1AFBA9103 /* ControllerModalPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControllerModalPresenter.swift; path = Auth0/ControllerModalPresenter.swift; sourceTree = "<group>"; };
+		4EE11CB31A03D21FB7DB35A792DB4EBB /* WebAuthError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebAuthError.swift; path = Auth0/WebAuthError.swift; sourceTree = "<group>"; };
+		518C2652CC283398AC753828FAE3A0E7 /* Pods-SpaceFlightNewsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpaceFlightNewsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		54A82EA575192C68115C6367850D9877 /* Handlers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Handlers.swift; path = Auth0/Handlers.swift; sourceTree = "<group>"; };
+		5821FCE8666918BBA3EF7838C4F78A12 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Auth0/Request.swift; sourceTree = "<group>"; };
+		5F8A1D9539AB7BAB8B6F27A37821A201 /* SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleKeychain.h; path = SimpleKeychain/SimpleKeychain.h; sourceTree = "<group>"; };
+		602B6B6D02ADE1D223C998E31DD536FF /* Pods-SpaceFlightNews-SpaceFlightNewsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpaceFlightNews-SpaceFlightNewsUITests.modulemap"; sourceTree = "<group>"; };
+		6166813DD98F731545054566C01A6F8E /* Pods-SpaceFlightNewsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpaceFlightNewsTests.modulemap"; sourceTree = "<group>"; };
+		64B2A9A63076642FD99747CF1089DE4E /* A0SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SimpleKeychain.h; path = SimpleKeychain/A0SimpleKeychain.h; sourceTree = "<group>"; };
+		65C227D484903DA59D5B882CC93B2967 /* BioAuthentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BioAuthentication.swift; path = Auth0/BioAuthentication.swift; sourceTree = "<group>"; };
+		66204660A1F97A7F69B22A4352D976AD /* Requestable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Requestable.swift; path = Auth0/Requestable.swift; sourceTree = "<group>"; };
+		664628A863DDCB2F2184D52671BFA8AA /* SessionCallbackTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionCallbackTransaction.swift; path = Auth0/SessionCallbackTransaction.swift; sourceTree = "<group>"; };
+		666EBF7C76218E9195108476D1BD92AA /* NSData+URLSafe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSData+URLSafe.swift"; path = "Auth0/NSData+URLSafe.swift"; sourceTree = "<group>"; };
+		669071C8CD69F63BF5109754C567BE88 /* TransactionStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransactionStore.swift; path = Auth0/TransactionStore.swift; sourceTree = "<group>"; };
+		68446A9C3212B3CF0ACD264CFEF44928 /* NSURL+Auth0.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURL+Auth0.swift"; path = "Auth0/NSURL+Auth0.swift"; sourceTree = "<group>"; };
+		6996B65F00A1A2D61568FAFEB7B65274 /* Pods-SpaceFlightNews-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpaceFlightNews-acknowledgements.markdown"; sourceTree = "<group>"; };
+		712CFE41D8526C97A940D82DD3250D40 /* UserInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInfo.swift; path = Auth0/UserInfo.swift; sourceTree = "<group>"; };
+		717AF0B9B9EE07BBA4A8935B8678F5F3 /* Pods-SpaceFlightNewsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpaceFlightNewsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		72BF0A3B046FA4728ABE018F55E47E87 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpaceFlightNews-SpaceFlightNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72F7E4F3AFEC7BDADAF4B98E9EA0743A /* ValidatorJWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidatorJWT.swift; path = JWTDecode/ValidatorJWT.swift; sourceTree = "<group>"; };
+		76197E9D6B0B0AC1F20BDA7460D0E490 /* A0SHA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SHA.m; path = Auth0/ObjectiveC/A0SHA.m; sourceTree = "<group>"; };
+		764E510ADB6B548BAA3F8BAD7EB0E49C /* Pods-SpaceFlightNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpaceFlightNewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		76517FBBA5CB457D3D07DDFB0E6D1BC7 /* AuthenticationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationError.swift; path = Auth0/AuthenticationError.swift; sourceTree = "<group>"; };
+		776740326B86F4697C1277A27DB5F0FD /* A0RSA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0RSA.m; path = Auth0/ObjectiveC/A0RSA.m; sourceTree = "<group>"; };
+		7820A032CC82399C4B6429A097E92D23 /* Auth0Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth0Error.swift; path = Auth0/Auth0Error.swift; sourceTree = "<group>"; };
+		7A1042BEC30A79B73B058588190D2744 /* Auth0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Auth0-prefix.pch"; sourceTree = "<group>"; };
+		7A8D4AC02B51FD03224739D06AEE207B /* JWTDecode */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JWTDecode; path = JWTDecode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B40FDDEBB22CDC6AFB81FB5A53CC935 /* A0SimpleKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SimpleKeychain.m; path = SimpleKeychain/A0SimpleKeychain.m; sourceTree = "<group>"; };
+		7B95C986E0B25E948A883B442D808BC9 /* Auth0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Auth0.modulemap; sourceTree = "<group>"; };
+		7EB240BDA075E3DF539F4E3DBAB36285 /* JWKS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWKS.swift; path = Auth0/JWKS.swift; sourceTree = "<group>"; };
+		8089A6DA27C79CACA84E2EBEBDB8DA7D /* _ObjectiveAuthenticationAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _ObjectiveAuthenticationAPI.swift; path = Auth0/_ObjectiveAuthenticationAPI.swift; sourceTree = "<group>"; };
+		838587371CD1737E4C103B6C9C96704A /* Pods-SpaceFlightNews */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SpaceFlightNews"; path = Pods_SpaceFlightNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		873F613BBF213D70ADED78D958A9A14E /* JWTDecode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTDecode.swift; path = JWTDecode/JWTDecode.swift; sourceTree = "<group>"; };
+		87D10F05A9A21B97F745D594E33A6836 /* SimpleKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-umbrella.h"; sourceTree = "<group>"; };
+		8A0FAFFA6DE531C513F8AA5ACC498F91 /* IDTokenValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IDTokenValidator.swift; path = Auth0/IDTokenValidator.swift; sourceTree = "<group>"; };
+		8D0E8F3FA6D08449F607C7ACCB305B39 /* Optional+DebugDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Optional+DebugDescription.swift"; path = "Auth0/Optional+DebugDescription.swift"; sourceTree = "<group>"; };
+		8DEC43EECA74605A74A52E87B8C56D28 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SpaceFlightNews-SpaceFlightNewsUITests"; path = Pods_SpaceFlightNews_SpaceFlightNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		923C41ACDBA736A6EDA5FDBF3BAA6542 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Auth0/Result.swift; sourceTree = "<group>"; };
+		93EB6C9D3F009DAFF47813F985F88B37 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpaceFlightNews-SpaceFlightNewsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		967FA09057138FF99B608EDC03C59DC2 /* A0SHA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SHA.h; path = Auth0/ObjectiveC/A0SHA.h; sourceTree = "<group>"; };
+		999459C45731F18EC49428C10057EA51 /* Auth0 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Auth0; path = Auth0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4D217293BCB113A2D2516006C636C5 /* ManagementError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManagementError.swift; path = Auth0/ManagementError.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD9FE2443FD44343C00A0A9F472F9D6 /* Pods-SpaceFlightNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpaceFlightNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E4804C97E30BA0997E0C6ADC6502582 /* MobileWebAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MobileWebAuth.swift; path = Auth0/MobileWebAuth.swift; sourceTree = "<group>"; };
+		9E7FBA9266958E82727627B37B62CD7B /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Auth0/Date.swift; sourceTree = "<group>"; };
+		A0CBF51174E12BFB1DF97A75742BE232 /* SimpleKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-prefix.pch"; sourceTree = "<group>"; };
+		A2A55FCCD31206412C53ACEEE9A2DC6E /* Users.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Auth0/Users.swift; sourceTree = "<group>"; };
+		A2C0F270631B0AFD422F0FF40F462E57 /* Pods-SpaceFlightNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpaceFlightNews.release.xcconfig"; sourceTree = "<group>"; };
+		A40CF0997A468CA6680C2678777549A1 /* SilentSafariViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SilentSafariViewController.swift; path = Auth0/SilentSafariViewController.swift; sourceTree = "<group>"; };
+		A5D74567A32CCB5F89332FCA31847A6B /* JWTDecode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWTDecode-prefix.pch"; sourceTree = "<group>"; };
+		A65FF1E35BBB6E485C6D099850576911 /* AuthTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthTransaction.swift; path = Auth0/AuthTransaction.swift; sourceTree = "<group>"; };
+		A6C851DE612D067873C6C1DBF9A13180 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
+		AE70C885EABBF5272A371D5934D3B61D /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpaceFlightNews-SpaceFlightNewsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B17F371D1C7D1B1D9A809FDAD271A782 /* TokenValidators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenValidators.swift; path = JWTDecode/TokenValidators.swift; sourceTree = "<group>"; };
+		B4D5E7361F778EB8FF2A01C567DF6A7D /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = JWTDecode/Errors.swift; sourceTree = "<group>"; };
+		BAFDC2AC67F20BDE4E967792459999A2 /* JWK+RSA.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JWK+RSA.swift"; path = "Auth0/JWK+RSA.swift"; sourceTree = "<group>"; };
+		BC1F8A9048EEE7890F8D3CAAB329E13A /* A0SimpleKeychain+RSAPublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "A0SimpleKeychain+RSAPublicKey.swift"; path = "Auth0/A0SimpleKeychain+RSAPublicKey.swift"; sourceTree = "<group>"; };
+		BFDF3F82A9044402CB5518B52297C4BC /* JSONObjectPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONObjectPayload.swift; path = Auth0/JSONObjectPayload.swift; sourceTree = "<group>"; };
+		C26284971309659C6137DFC23B525ACE /* SafariSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafariSession.swift; path = Auth0/SafariSession.swift; sourceTree = "<group>"; };
+		C3B6406E6FA357816913FE0BC95ECA5D /* Pods-SpaceFlightNews-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpaceFlightNews-acknowledgements.plist"; sourceTree = "<group>"; };
+		C3E746FB2B40BD60709ADCAB77AA151C /* SimpleKeychain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKeychain.release.xcconfig; sourceTree = "<group>"; };
+		CA568E6154BE7BC29682237B6B292347 /* AuthProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthProvider.swift; path = Auth0/AuthProvider.swift; sourceTree = "<group>"; };
+		CA64E6BE6EEBC6A00AF3C83200F76307 /* AuthenticationServicesSessionCallback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationServicesSessionCallback.swift; path = Auth0/AuthenticationServicesSessionCallback.swift; sourceTree = "<group>"; };
+		CB00A3C63C78F558C9957C89A57C7AFB /* Auth0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Auth0-umbrella.h"; sourceTree = "<group>"; };
+		CD3B027EC578E22891ED55C05705F3CD /* SimpleKeychain */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleKeychain; path = SimpleKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD9C6DF250769F4DA57131D55BC59911 /* Pods-SpaceFlightNews-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpaceFlightNews-Info.plist"; sourceTree = "<group>"; };
+		D10AB05DF88074A8157D97F957D0A1E1 /* JWT+Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JWT+Header.swift"; path = "Auth0/JWT+Header.swift"; sourceTree = "<group>"; };
+		D893D87086EBB2C8DE787C3676A8DAFF /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = JWTDecode/JWT.swift; sourceTree = "<group>"; };
+		DD045E4FECD21C203F4888C54BEFCAF4 /* JWTDecode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWTDecode-dummy.m"; sourceTree = "<group>"; };
+		E0EA641F3D684EA692524C174A0F01B8 /* IDTokenValidatorContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IDTokenValidatorContext.swift; path = Auth0/IDTokenValidatorContext.swift; sourceTree = "<group>"; };
+		E2E0C48753EFCC6E4D54F72B5B727B82 /* Array+Encode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Encode.swift"; path = "Auth0/Array+Encode.swift"; sourceTree = "<group>"; };
+		E2FA08AC4B9EF951DD36AD9B90C9E955 /* Credentials.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Credentials.swift; path = Auth0/Credentials.swift; sourceTree = "<group>"; };
+		E386545294D2D827817CD795754ED5FC /* SimpleKeychain-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleKeychain-Info.plist"; sourceTree = "<group>"; };
+		E3D4F3B20A18A9AFFCABA49E9B94464D /* Pods-SpaceFlightNews-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpaceFlightNews-umbrella.h"; sourceTree = "<group>"; };
+		E49C04E40106066A22974E6CA3597B35 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpaceFlightNews-SpaceFlightNewsUITests-Info.plist"; sourceTree = "<group>"; };
+		E765C23B77779DC9E41A06B583990F55 /* A0JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = A0JWT.swift; path = JWTDecode/A0JWT.swift; sourceTree = "<group>"; };
+		E87A78DB6539717BB84084FF0452B867 /* OAuth2Grant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Grant.swift; path = Auth0/OAuth2Grant.swift; sourceTree = "<group>"; };
+		E9822590755CAE9A61CBDEDC2F553CBD /* AuthCancelable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthCancelable.swift; path = Auth0/AuthCancelable.swift; sourceTree = "<group>"; };
+		E9CB3EC78A7663655AC5C84717C4D053 /* Pods-SpaceFlightNewsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpaceFlightNewsTests-dummy.m"; sourceTree = "<group>"; };
+		EB790ED4828B8FE30A31346129B9EDD3 /* BaseAuthTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseAuthTransaction.swift; path = Auth0/BaseAuthTransaction.swift; sourceTree = "<group>"; };
+		EC67C6114276F39ECAD3DDBD138425BA /* AuthSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthSession.swift; path = Auth0/AuthSession.swift; sourceTree = "<group>"; };
+		EC9E64911EA004AAD88DED98668F852C /* NativeAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeAuth.swift; path = Auth0/NativeAuth.swift; sourceTree = "<group>"; };
+		ED0EB0B9613D7579CABB55156B0C59D7 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Auth0/Logger.swift; sourceTree = "<group>"; };
+		EDE01B0B70F2FDD82DADC935866C586A /* JWTDecode-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JWTDecode-Info.plist"; sourceTree = "<group>"; };
+		F0E7B8979745BF01B7E8BC34229AC639 /* Pods-SpaceFlightNews-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpaceFlightNews-frameworks.sh"; sourceTree = "<group>"; };
+		F660F3B313F63BF57CE9A29EF934CE70 /* A0SimpleKeychain+KeyPair.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0SimpleKeychain+KeyPair.m"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.m"; sourceTree = "<group>"; };
+		F72664330F1023CFF3AE4EE26A5996B0 /* SimpleKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleKeychain-dummy.m"; sourceTree = "<group>"; };
+		FA7EA354149B983C0E4676D09CD4F0EC /* A0ChallengeGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0ChallengeGenerator.h; path = Auth0/ObjectiveC/A0ChallengeGenerator.h; sourceTree = "<group>"; };
+		FBC691EDDBD3E54D7B303C6C453698E0 /* Pods-SpaceFlightNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpaceFlightNews.debug.xcconfig"; sourceTree = "<group>"; };
+		FC4D33E43DC11B35C22CFC442336BA83 /* ClaimValidators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClaimValidators.swift; path = Auth0/ClaimValidators.swift; sourceTree = "<group>"; };
+		FD431D4DEDE59961A94D9F36C8F2947C /* NSURLComponents+OAuth2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLComponents+OAuth2.swift"; path = "Auth0/NSURLComponents+OAuth2.swift"; sourceTree = "<group>"; };
+		FEF48D0A987AF758ACE02CB84CE00003 /* Telemetry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Telemetry.swift; path = Auth0/Telemetry.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D437507B9D65487C488E7926994C720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B4B8DBD760ADABF37C6374F4680085 /* Foundation.framework in Frameworks */,
+				6F2CBF7B3772B946F1B49AEB5C80F0CC /* LocalAuthentication.framework in Frameworks */,
+				0A0E9342C6BCD64C0C5F6D82FBF0F056 /* SafariServices.framework in Frameworks */,
+				7901ADDD895E4E5EA13A492BA0BE8418 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		438028C294A5292729070FF1A081C424 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5950C8F7669BFA603EE655C05709B3B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DB2E0F2C8B2C3B84316A28FFDDAA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDD65E445576844FFA3A2613A99DEB72 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71E8E724B9FC54408040B8DE3FB9C70F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87BDDA991B6EF10C7159B0BCDD29A957 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1D1E519111DAFDF30EE43557D27F60E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185AA7F3B0DAA1BD58F3EF12AFA4D044 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD0ACB0F62F72847971F93587850A818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E88446313CA2FB6294D462DF936921D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0079B0DA5854E571C501B08988D347B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B95C986E0B25E948A883B442D808BC9 /* Auth0.modulemap */,
+				3558ADC0FF593D437A682268BA6CC549 /* Auth0-dummy.m */,
+				37F7BDD8098D65AF728298718EF8DDFB /* Auth0-Info.plist */,
+				7A1042BEC30A79B73B058588190D2744 /* Auth0-prefix.pch */,
+				CB00A3C63C78F558C9957C89A57C7AFB /* Auth0-umbrella.h */,
+				11FEC3353834722630EEAB6199647B38 /* Auth0.debug.xcconfig */,
+				35FB80469D838C9E3660736FE5978F42 /* Auth0.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Auth0";
+			sourceTree = "<group>";
+		};
+		12638D6F34E4AA09482C15A6135E06AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C70896AED9DA27FE625FB1A5DE7561D /* Auth0 */,
+				AF7F9348C309A766AE9BA0EBC1989053 /* JWTDecode */,
+				3FDC8DCA90E449CC93D25E4F082BFE72 /* SimpleKeychain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		20815FB12F682AA4B57743722F8E10A4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2F26A3652EA7DD88022F2E06144DCA1 /* Pods-SpaceFlightNews */,
+				3B25A73B0CDB35218C2BF1121935A75B /* Pods-SpaceFlightNews-SpaceFlightNewsUITests */,
+				9F26708B3A912101D2A16F3BB6599784 /* Pods-SpaceFlightNewsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3B25A73B0CDB35218C2BF1121935A75B /* Pods-SpaceFlightNews-SpaceFlightNewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				602B6B6D02ADE1D223C998E31DD536FF /* Pods-SpaceFlightNews-SpaceFlightNewsUITests.modulemap */,
+				3D105784488DF1F2C56FC4230686655D /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-acknowledgements.markdown */,
+				AE70C885EABBF5272A371D5934D3B61D /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-acknowledgements.plist */,
+				3AF7181723BBFC6E97B4009144BA77E9 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-dummy.m */,
+				93EB6C9D3F009DAFF47813F985F88B37 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-frameworks.sh */,
+				E49C04E40106066A22974E6CA3597B35 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-Info.plist */,
+				0CADDC08D7262FD5D517A02A5E03069C /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-umbrella.h */,
+				04305A1C44016E80B0DC6A5844753B97 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests.debug.xcconfig */,
+				72BF0A3B046FA4728ABE018F55E47E87 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests.release.xcconfig */,
+			);
+			name = "Pods-SpaceFlightNews-SpaceFlightNewsUITests";
+			path = "Target Support Files/Pods-SpaceFlightNews-SpaceFlightNewsUITests";
+			sourceTree = "<group>";
+		};
+		3FDC8DCA90E449CC93D25E4F082BFE72 /* SimpleKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				64B2A9A63076642FD99747CF1089DE4E /* A0SimpleKeychain.h */,
+				7B40FDDEBB22CDC6AFB81FB5A53CC935 /* A0SimpleKeychain.m */,
+				309A9382BE3E0BD3E85BAB6F1CC0FF7B /* A0SimpleKeychain+KeyPair.h */,
+				F660F3B313F63BF57CE9A29EF934CE70 /* A0SimpleKeychain+KeyPair.m */,
+				5F8A1D9539AB7BAB8B6F27A37821A201 /* SimpleKeychain.h */,
+				6F299129E31AC2BD70959D4F6C00A131 /* Support Files */,
+			);
+			name = SimpleKeychain;
+			path = SimpleKeychain;
+			sourceTree = "<group>";
+		};
+		4C9A176568513CB69FC484D6C6FEA6FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31CB5192AD62246B2C0079FD1ABD61B9 /* JWTDecode.modulemap */,
+				DD045E4FECD21C203F4888C54BEFCAF4 /* JWTDecode-dummy.m */,
+				EDE01B0B70F2FDD82DADC935866C586A /* JWTDecode-Info.plist */,
+				A5D74567A32CCB5F89332FCA31847A6B /* JWTDecode-prefix.pch */,
+				3A1FBFA5659299730F7AE08D389A8A2B /* JWTDecode-umbrella.h */,
+				21E2C55A4EC775FA300C2323DDAB0045 /* JWTDecode.debug.xcconfig */,
+				42576BCA4A469AFD9E6BD032CE2FB92C /* JWTDecode.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JWTDecode";
+			sourceTree = "<group>";
+		};
+		6C70896AED9DA27FE625FB1A5DE7561D /* Auth0 */ = {
+			isa = PBXGroup;
+			children = (
+				8089A6DA27C79CACA84E2EBEBDB8DA7D /* _ObjectiveAuthenticationAPI.swift */,
+				336CF463560D100CBBB00773C7F2224F /* _ObjectiveManagementAPI.swift */,
+				0E62F8FAF047061469E38B121DF09115 /* _ObjectiveWebAuth.swift */,
+				FA7EA354149B983C0E4676D09CD4F0EC /* A0ChallengeGenerator.h */,
+				04832FCD0BBD6D5A9CCC42D9217A687F /* A0ChallengeGenerator.m */,
+				038C4431B0091B59C79326F68BD1E00D /* A0RSA.h */,
+				776740326B86F4697C1277A27DB5F0FD /* A0RSA.m */,
+				967FA09057138FF99B608EDC03C59DC2 /* A0SHA.h */,
+				76197E9D6B0B0AC1F20BDA7460D0E490 /* A0SHA.m */,
+				BC1F8A9048EEE7890F8D3CAAB329E13A /* A0SimpleKeychain+RSAPublicKey.swift */,
+				E2E0C48753EFCC6E4D54F72B5B727B82 /* Array+Encode.swift */,
+				3F43DE9A5C42B3E64AF1936E9EEFE2CA /* Auth0.h */,
+				43E73E10C0026ABFD6D74B55A429D74A /* Auth0.swift */,
+				4B73C25F216CBC84F39F0D2FF6E94964 /* Auth0Authentication.swift */,
+				7820A032CC82399C4B6429A097E92D23 /* Auth0Error.swift */,
+				E9822590755CAE9A61CBDEDC2F553CBD /* AuthCancelable.swift */,
+				3C06B83514B449928B6AC69CF0361866 /* Authentication.swift */,
+				76517FBBA5CB457D3D07DDFB0E6D1BC7 /* AuthenticationError.swift */,
+				48CF5B3C98AF3F016CD08D173DC8447F /* AuthenticationServicesSession.swift */,
+				CA64E6BE6EEBC6A00AF3C83200F76307 /* AuthenticationServicesSessionCallback.swift */,
+				CA568E6154BE7BC29682237B6B292347 /* AuthProvider.swift */,
+				EC67C6114276F39ECAD3DDBD138425BA /* AuthSession.swift */,
+				A65FF1E35BBB6E485C6D099850576911 /* AuthTransaction.swift */,
+				EB790ED4828B8FE30A31346129B9EDD3 /* BaseAuthTransaction.swift */,
+				10640FF14DDDA0BAE3901AA24B060877 /* BaseWebAuth.swift */,
+				65C227D484903DA59D5B882CC93B2967 /* BioAuthentication.swift */,
+				FC4D33E43DC11B35C22CFC442336BA83 /* ClaimValidators.swift */,
+				4D893B228A0EF82B57E2B0C1AFBA9103 /* ControllerModalPresenter.swift */,
+				E2FA08AC4B9EF951DD36AD9B90C9E955 /* Credentials.swift */,
+				1DDBB301D01626A5E2602D0248093C55 /* CredentialsManager.swift */,
+				38478E6F30620890B18678E26C882C8E /* CredentialsManagerError.swift */,
+				9E7FBA9266958E82727627B37B62CD7B /* Date.swift */,
+				54A82EA575192C68115C6367850D9877 /* Handlers.swift */,
+				4384A2E20E69593CFACD5F79AD9FC724 /* Identity.swift */,
+				0DEC140A0FE82D257A60C19D26EFB34F /* IDTokenSignatureValidator.swift */,
+				8A0FAFFA6DE531C513F8AA5ACC498F91 /* IDTokenValidator.swift */,
+				E0EA641F3D684EA692524C174A0F01B8 /* IDTokenValidatorContext.swift */,
+				BFDF3F82A9044402CB5518B52297C4BC /* JSONObjectPayload.swift */,
+				BAFDC2AC67F20BDE4E967792459999A2 /* JWK+RSA.swift */,
+				7EB240BDA075E3DF539F4E3DBAB36285 /* JWKS.swift */,
+				D10AB05DF88074A8157D97F957D0A1E1 /* JWT+Header.swift */,
+				452B7DBBFB777CF1340BAE437ED26659 /* JWTAlgorithm.swift */,
+				0291BE2F1428E25CBD13229C8DB2859D /* Loggable.swift */,
+				ED0EB0B9613D7579CABB55156B0C59D7 /* Logger.swift */,
+				219E1E41A2B8A2AB89B8642E076E1504 /* Management.swift */,
+				9D4D217293BCB113A2D2516006C636C5 /* ManagementError.swift */,
+				9E4804C97E30BA0997E0C6ADC6502582 /* MobileWebAuth.swift */,
+				EC9E64911EA004AAD88DED98668F852C /* NativeAuth.swift */,
+				666EBF7C76218E9195108476D1BD92AA /* NSData+URLSafe.swift */,
+				1621F24F091FE14FF687D4033490F7E2 /* NSError+Helper.swift */,
+				68446A9C3212B3CF0ACD264CFEF44928 /* NSURL+Auth0.swift */,
+				FD431D4DEDE59961A94D9F36C8F2947C /* NSURLComponents+OAuth2.swift */,
+				E87A78DB6539717BB84084FF0452B867 /* OAuth2Grant.swift */,
+				8D0E8F3FA6D08449F607C7ACCB305B39 /* Optional+DebugDescription.swift */,
+				054B7A70801E1953FE13AD89D610AA2C /* Profile.swift */,
+				5821FCE8666918BBA3EF7838C4F78A12 /* Request.swift */,
+				66204660A1F97A7F69B22A4352D976AD /* Requestable.swift */,
+				06C23EF7EC939156EDC6A36C4477F2D2 /* Response.swift */,
+				151B368FB948AD4946726E1B0C87ADA4 /* ResponseType.swift */,
+				923C41ACDBA736A6EDA5FDBF3BAA6542 /* Result.swift */,
+				C26284971309659C6137DFC23B525ACE /* SafariSession.swift */,
+				664628A863DDCB2F2184D52671BFA8AA /* SessionCallbackTransaction.swift */,
+				19E4C89203168938EF17B444B6130191 /* SessionTransaction.swift */,
+				A40CF0997A468CA6680C2678777549A1 /* SilentSafariViewController.swift */,
+				401FFCEE11450DCECEDF6FD887DF455C /* String+URLSafe.swift */,
+				FEF48D0A987AF758ACE02CB84CE00003 /* Telemetry.swift */,
+				669071C8CD69F63BF5109754C567BE88 /* TransactionStore.swift */,
+				20CAF3642D1018040B845CB1B4CF0059 /* UIApplication+Shared.swift */,
+				712CFE41D8526C97A940D82DD3250D40 /* UserInfo.swift */,
+				399EBB626C927709058A8875985571F2 /* UserPatchAttributes.swift */,
+				A2A55FCCD31206412C53ACEEE9A2DC6E /* Users.swift */,
+				3427DCF597294BCB837E5A6472DB0E08 /* WebAuthenticatable.swift */,
+				4EE11CB31A03D21FB7DB35A792DB4EBB /* WebAuthError.swift */,
+				0079B0DA5854E571C501B08988D347B7 /* Support Files */,
+			);
+			name = Auth0;
+			path = Auth0;
+			sourceTree = "<group>";
+		};
+		6F299129E31AC2BD70959D4F6C00A131 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				04B99EEF3A1D00B141029F00B07560DC /* SimpleKeychain.modulemap */,
+				F72664330F1023CFF3AE4EE26A5996B0 /* SimpleKeychain-dummy.m */,
+				E386545294D2D827817CD795754ED5FC /* SimpleKeychain-Info.plist */,
+				A0CBF51174E12BFB1DF97A75742BE232 /* SimpleKeychain-prefix.pch */,
+				87D10F05A9A21B97F745D594E33A6836 /* SimpleKeychain-umbrella.h */,
+				34D2531244061C2A1806CD8730BAFC3D /* SimpleKeychain.debug.xcconfig */,
+				C3E746FB2B40BD60709ADCAB77AA151C /* SimpleKeychain.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimpleKeychain";
+			sourceTree = "<group>";
+		};
+		76B633CE2DC635370C8B35DC95AF32FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				999459C45731F18EC49428C10057EA51 /* Auth0 */,
+				7A8D4AC02B51FD03224739D06AEE207B /* JWTDecode */,
+				838587371CD1737E4C103B6C9C96704A /* Pods-SpaceFlightNews */,
+				8DEC43EECA74605A74A52E87B8C56D28 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests */,
+				166B79C1E0D1CA1D8348646B4AFF752F /* Pods-SpaceFlightNewsTests */,
+				CD3B027EC578E22891ED55C05705F3CD /* SimpleKeychain */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F26708B3A912101D2A16F3BB6599784 /* Pods-SpaceFlightNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				6166813DD98F731545054566C01A6F8E /* Pods-SpaceFlightNewsTests.modulemap */,
+				717AF0B9B9EE07BBA4A8935B8678F5F3 /* Pods-SpaceFlightNewsTests-acknowledgements.markdown */,
+				518C2652CC283398AC753828FAE3A0E7 /* Pods-SpaceFlightNewsTests-acknowledgements.plist */,
+				E9CB3EC78A7663655AC5C84717C4D053 /* Pods-SpaceFlightNewsTests-dummy.m */,
+				2BD66EE55B6BE098B618AF14E6CB2947 /* Pods-SpaceFlightNewsTests-Info.plist */,
+				110D07727E9E0615E2C910EC04973438 /* Pods-SpaceFlightNewsTests-umbrella.h */,
+				9DD9FE2443FD44343C00A0A9F472F9D6 /* Pods-SpaceFlightNewsTests.debug.xcconfig */,
+				764E510ADB6B548BAA3F8BAD7EB0E49C /* Pods-SpaceFlightNewsTests.release.xcconfig */,
+			);
+			name = "Pods-SpaceFlightNewsTests";
+			path = "Target Support Files/Pods-SpaceFlightNewsTests";
+			sourceTree = "<group>";
+		};
+		AF7F9348C309A766AE9BA0EBC1989053 /* JWTDecode */ = {
+			isa = PBXGroup;
+			children = (
+				E765C23B77779DC9E41A06B583990F55 /* A0JWT.swift */,
+				B4D5E7361F778EB8FF2A01C567DF6A7D /* Errors.swift */,
+				D893D87086EBB2C8DE787C3676A8DAFF /* JWT.swift */,
+				873F613BBF213D70ADED78D958A9A14E /* JWTDecode.swift */,
+				B17F371D1C7D1B1D9A809FDAD271A782 /* TokenValidators.swift */,
+				128F7E17E242CB67AC935A1072DBB468 /* ValidationError.swift */,
+				72F7E4F3AFEC7BDADAF4B98E9EA0743A /* ValidatorJWT.swift */,
+				4C9A176568513CB69FC484D6C6FEA6FC /* Support Files */,
+			);
+			name = JWTDecode;
+			path = JWTDecode;
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA29F7B2CA6ECF5645E2476C98EFE686 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2F26A3652EA7DD88022F2E06144DCA1 /* Pods-SpaceFlightNews */ = {
+			isa = PBXGroup;
+			children = (
+				175780063F42F039BD93905AE4E6954A /* Pods-SpaceFlightNews.modulemap */,
+				6996B65F00A1A2D61568FAFEB7B65274 /* Pods-SpaceFlightNews-acknowledgements.markdown */,
+				C3B6406E6FA357816913FE0BC95ECA5D /* Pods-SpaceFlightNews-acknowledgements.plist */,
+				3D0777A287B09BF289459CFE9D8E77FA /* Pods-SpaceFlightNews-dummy.m */,
+				F0E7B8979745BF01B7E8BC34229AC639 /* Pods-SpaceFlightNews-frameworks.sh */,
+				CD9C6DF250769F4DA57131D55BC59911 /* Pods-SpaceFlightNews-Info.plist */,
+				E3D4F3B20A18A9AFFCABA49E9B94464D /* Pods-SpaceFlightNews-umbrella.h */,
+				FBC691EDDBD3E54D7B303C6C453698E0 /* Pods-SpaceFlightNews.debug.xcconfig */,
+				A2C0F270631B0AFD422F0FF40F462E57 /* Pods-SpaceFlightNews.release.xcconfig */,
+			);
+			name = "Pods-SpaceFlightNews";
+			path = "Target Support Files/Pods-SpaceFlightNews";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				12638D6F34E4AA09482C15A6135E06AB /* Pods */,
+				76B633CE2DC635370C8B35DC95AF32FB /* Products */,
+				20815FB12F682AA4B57743722F8E10A4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DA29F7B2CA6ECF5645E2476C98EFE686 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				11EB6573713F697CA0C8C5D3857EFB38 /* Foundation.framework */,
+				1D664FA7D48233DF3E6058B905BE34FC /* LocalAuthentication.framework */,
+				A6C851DE612D067873C6C1DBF9A13180 /* SafariServices.framework */,
+				09F67A9011BDB1A12FD8F4381AB911FA /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		238040E628A47DFB2A7513BCC940E94B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82A3CC05665A518808EA2D24E3CE35AF /* Pods-SpaceFlightNews-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D5C7D205CF28F892B53F50748E1CE62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F866E4BCB6A82CA8A8E82AA194717533 /* A0ChallengeGenerator.h in Headers */,
+				CB55D16524C37AFFFD7E35E6350749BF /* A0RSA.h in Headers */,
+				EB280BECC10873B27DA843E8C1E8A123 /* A0SHA.h in Headers */,
+				C63A91FF65765012A1060E2D0D009EC7 /* Auth0.h in Headers */,
+				09B4C78D089CD4F969A30695957B0F3D /* Auth0-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D68B67E19F71343DEACBD9D1A8932E8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C2E00C2EADEA7631411D0AB55607C2 /* Pods-SpaceFlightNewsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63ED61B21ECEC775F72D08D51F0F896F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442E573ECC5C80A2572322FF55C77231 /* JWTDecode-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDEE3FACEDA2741DF067F78C6E79BEE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA894B047A3A6114FFEC5EFD854E047C /* A0SimpleKeychain.h in Headers */,
+				63300EFB73BF605B9184C49E14DA486E /* A0SimpleKeychain+KeyPair.h in Headers */,
+				0C3E122E81326D4A2908BE60DEBAE615 /* SimpleKeychain.h in Headers */,
+				BA57B43B0C79BF19A141265EE7B4D8A8 /* SimpleKeychain-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE37F84B1EED076A3E6C26C4DEBA99C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A69B57FB02EB9049370390E89D0FBB3A /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		192AEFA366AAFE1F45B918C022FE489C /* SimpleKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FE8EDED97A1350D202962209B77F114 /* Build configuration list for PBXNativeTarget "SimpleKeychain" */;
+			buildPhases = (
+				CDEE3FACEDA2741DF067F78C6E79BEE0 /* Headers */,
+				29CA53276C2657F28B15210A0CF7FEBF /* Sources */,
+				438028C294A5292729070FF1A081C424 /* Frameworks */,
+				72B098E66BA01DB80F84B00EBA57530E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleKeychain;
+			productName = SimpleKeychain;
+			productReference = CD3B027EC578E22891ED55C05705F3CD /* SimpleKeychain */;
+			productType = "com.apple.product-type.framework";
+		};
+		22E1F0E7CBECE226FC294E79C21B0033 /* JWTDecode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA38029C9CE5BCFDF9BEC3613BD2CD83 /* Build configuration list for PBXNativeTarget "JWTDecode" */;
+			buildPhases = (
+				63ED61B21ECEC775F72D08D51F0F896F /* Headers */,
+				47DD2951AC6A394DD9EF25BD33DC2F80 /* Sources */,
+				63DB2E0F2C8B2C3B84316A28FFDDAA8F /* Frameworks */,
+				66ABB8D9CC38C92A4E38160B83CE636B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWTDecode;
+			productName = JWTDecode;
+			productReference = 7A8D4AC02B51FD03224739D06AEE207B /* JWTDecode */;
+			productType = "com.apple.product-type.framework";
+		};
+		76931ADCDD8AD534457A5232904D0E34 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E0826ED75CD423A99E41DE7E3C60AA1 /* Build configuration list for PBXNativeTarget "Pods-SpaceFlightNews-SpaceFlightNewsUITests" */;
+			buildPhases = (
+				FE37F84B1EED076A3E6C26C4DEBA99C1 /* Headers */,
+				7C5233B428355C1BD4696DC3026D41FB /* Sources */,
+				B1D1E519111DAFDF30EE43557D27F60E /* Frameworks */,
+				D0F300793BE1CD8491907C539DB77F08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F58ED8B2C0C0256EBB16C8EE93F70111 /* PBXTargetDependency */,
+				2D72A228F7E5C3D290C1945602305863 /* PBXTargetDependency */,
+				81C5E93703D4EFD9E99F352A49B70D8D /* PBXTargetDependency */,
+			);
+			name = "Pods-SpaceFlightNews-SpaceFlightNewsUITests";
+			productName = Pods_SpaceFlightNews_SpaceFlightNewsUITests;
+			productReference = 8DEC43EECA74605A74A52E87B8C56D28 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6A440A37D50015E369921294617C612 /* Auth0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B949BAF43DD16FE21141EA56A2A3B1F0 /* Build configuration list for PBXNativeTarget "Auth0" */;
+			buildPhases = (
+				3D5C7D205CF28F892B53F50748E1CE62 /* Headers */,
+				AA3DD316B0B2CEE3BA93C466BD6716F1 /* Sources */,
+				3D437507B9D65487C488E7926994C720 /* Frameworks */,
+				246B34C5A5965003A35FA59B83E2AABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCC5AE4849A2CD90C1615433AEEAF9B6 /* PBXTargetDependency */,
+				CFB669E48F8B07999EADF0B36763D8E8 /* PBXTargetDependency */,
+			);
+			name = Auth0;
+			productName = Auth0;
+			productReference = 999459C45731F18EC49428C10057EA51 /* Auth0 */;
+			productType = "com.apple.product-type.framework";
+		};
+		D9BF0F0079FCAFAA5D16C83BD3089484 /* Pods-SpaceFlightNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F284A83558248AF49153218E2812F14 /* Build configuration list for PBXNativeTarget "Pods-SpaceFlightNewsTests" */;
+			buildPhases = (
+				5D68B67E19F71343DEACBD9D1A8932E8 /* Headers */,
+				365C452C438579D77EAC45C8ECB3F462 /* Sources */,
+				71E8E724B9FC54408040B8DE3FB9C70F /* Frameworks */,
+				D7C7F57135F5419CFBAF6C28AD3F4CAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				063423A7E5A2318255CEACD753C8DD68 /* PBXTargetDependency */,
+			);
+			name = "Pods-SpaceFlightNewsTests";
+			productName = Pods_SpaceFlightNewsTests;
+			productReference = 166B79C1E0D1CA1D8348646B4AFF752F /* Pods-SpaceFlightNewsTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC65C6D1A0272356836056789304E4B0 /* Pods-SpaceFlightNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF11C934E2A0544916054FD78BF3DAF2 /* Build configuration list for PBXNativeTarget "Pods-SpaceFlightNews" */;
+			buildPhases = (
+				238040E628A47DFB2A7513BCC940E94B /* Headers */,
+				2CF4EB6CF6EA3656D7B33ED8E40D374B /* Sources */,
+				FD0ACB0F62F72847971F93587850A818 /* Frameworks */,
+				4FE369FAD50691A7F08C97A6FFF8C6B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BDD0238D2B84225D34A8601023CE69F /* PBXTargetDependency */,
+				7EA6D452B60B1C9488826E413A36796A /* PBXTargetDependency */,
+				8D8B368A2F1B612E3FAC0016E2DA6BC7 /* PBXTargetDependency */,
+			);
+			name = "Pods-SpaceFlightNews";
+			productName = Pods_SpaceFlightNews;
+			productReference = 838587371CD1737E4C103B6C9C96704A /* Pods-SpaceFlightNews */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 76B633CE2DC635370C8B35DC95AF32FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6A440A37D50015E369921294617C612 /* Auth0 */,
+				22E1F0E7CBECE226FC294E79C21B0033 /* JWTDecode */,
+				DC65C6D1A0272356836056789304E4B0 /* Pods-SpaceFlightNews */,
+				76931ADCDD8AD534457A5232904D0E34 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests */,
+				D9BF0F0079FCAFAA5D16C83BD3089484 /* Pods-SpaceFlightNewsTests */,
+				192AEFA366AAFE1F45B918C022FE489C /* SimpleKeychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		246B34C5A5965003A35FA59B83E2AABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FE369FAD50691A7F08C97A6FFF8C6B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66ABB8D9CC38C92A4E38160B83CE636B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B098E66BA01DB80F84B00EBA57530E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0F300793BE1CD8491907C539DB77F08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7C7F57135F5419CFBAF6C28AD3F4CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29CA53276C2657F28B15210A0CF7FEBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				309B05E1D51141B6AF7EED3596F30A36 /* A0SimpleKeychain.m in Sources */,
+				ECF0B90A13042DAF51112218C18D2FBD /* A0SimpleKeychain+KeyPair.m in Sources */,
+				85D0E7DB3123A8C92856B95D8923BEEA /* SimpleKeychain-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CF4EB6CF6EA3656D7B33ED8E40D374B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2B2838D593A03A44B499741A14DE28 /* Pods-SpaceFlightNews-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		365C452C438579D77EAC45C8ECB3F462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0888E64B8EA4D1C44A23EC84B9F0576C /* Pods-SpaceFlightNewsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47DD2951AC6A394DD9EF25BD33DC2F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E24A58002B009F6A87A1EE8F8E0ED3D /* A0JWT.swift in Sources */,
+				84B132C0BFC5470021D698D42FFE8369 /* Errors.swift in Sources */,
+				FD2D989797700914041B381CF55C7F35 /* JWT.swift in Sources */,
+				1E7809A920AE5990E979F96859B50E1B /* JWTDecode.swift in Sources */,
+				2FBCED58DF3D9F9766E4F749E46D6104 /* JWTDecode-dummy.m in Sources */,
+				309ED4F92C4A1E6E4B9E9C2DB840FD0F /* TokenValidators.swift in Sources */,
+				4AC8E42318A85A68EFA5E45AF0F55702 /* ValidationError.swift in Sources */,
+				62F3E87F5B607975EAD04984B156CCF7 /* ValidatorJWT.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C5233B428355C1BD4696DC3026D41FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5227CE3D5D89DAD2E9BB7527A7A7EF0C /* Pods-SpaceFlightNews-SpaceFlightNewsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3DD316B0B2CEE3BA93C466BD6716F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E01194848C894B16C5D528ABA386B73 /* _ObjectiveAuthenticationAPI.swift in Sources */,
+				4B9498B7639057810155A593CED6E635 /* _ObjectiveManagementAPI.swift in Sources */,
+				0C7460E53E148D683A88FB7EA8E14148 /* _ObjectiveWebAuth.swift in Sources */,
+				5D6BE90324B7F3F30C6B579292863F11 /* A0ChallengeGenerator.m in Sources */,
+				A720396F7A992189F37AD472C3E65749 /* A0RSA.m in Sources */,
+				F5F876E9EA7A90EA8B6F153DA71F66B5 /* A0SHA.m in Sources */,
+				39EB52E0D1241AC295CA829AE895EDA9 /* A0SimpleKeychain+RSAPublicKey.swift in Sources */,
+				5F03648C6C50ECC757829CAAF585F9D1 /* Array+Encode.swift in Sources */,
+				251C76E7F3FC511CA099F0C46190B68C /* Auth0.swift in Sources */,
+				6287B923ADC9D07DB692D53C85A542F5 /* Auth0-dummy.m in Sources */,
+				AA5EE4A662514EB68948E84D4215E7A0 /* Auth0Authentication.swift in Sources */,
+				D6B58CEF1024E16E13C0AAA21D2CF6FC /* Auth0Error.swift in Sources */,
+				B6E7C892E0778ED6AC2BA3ACF118F731 /* AuthCancelable.swift in Sources */,
+				72C4BD7892FC24963F5C8ED7B6841CD8 /* Authentication.swift in Sources */,
+				0777D1302FC27E26C7044305904CFEA4 /* AuthenticationError.swift in Sources */,
+				3268B19B56E9DF2E3A6284C803690879 /* AuthenticationServicesSession.swift in Sources */,
+				976F026FBDCAE28124CA576B46B05BE5 /* AuthenticationServicesSessionCallback.swift in Sources */,
+				22BA9096F0B3D1899F161A58924009D2 /* AuthProvider.swift in Sources */,
+				07C1A1EAC63D2B437FD2D4B3EB59D4DD /* AuthSession.swift in Sources */,
+				3437119119F3CB0DE4153B0DECB63BA5 /* AuthTransaction.swift in Sources */,
+				C1371C1B4ABFD55304C389B1037327F4 /* BaseAuthTransaction.swift in Sources */,
+				0E2710EFEB6013E7AD96736FAFBCF5A7 /* BaseWebAuth.swift in Sources */,
+				30D916E5B5DEF63A1B38A5ACC7273800 /* BioAuthentication.swift in Sources */,
+				66C45CAFC52BC359B927B31689F456C5 /* ClaimValidators.swift in Sources */,
+				B7B6BCD109BB566370F61E70F5DB52CD /* ControllerModalPresenter.swift in Sources */,
+				861D27B274EB2B0670723541AB74B53F /* Credentials.swift in Sources */,
+				D0F4BFC83D5E22B2C293726440D8C851 /* CredentialsManager.swift in Sources */,
+				B689DCAD8FA6305370E69BFF5F9EF723 /* CredentialsManagerError.swift in Sources */,
+				6D2EF2DD522E7B10277526A5E4C69129 /* Date.swift in Sources */,
+				ACAE4CB7CC7B1CAFD489B598012317D1 /* Handlers.swift in Sources */,
+				06B9928CE474B81AACF0240428D081AB /* Identity.swift in Sources */,
+				5B50F636DDCA5B506C3B75EC465BFEE0 /* IDTokenSignatureValidator.swift in Sources */,
+				72ADCC623CE054A588EC43F7C0FBCA30 /* IDTokenValidator.swift in Sources */,
+				9666CF553AA84768A327C578FC369574 /* IDTokenValidatorContext.swift in Sources */,
+				983F38C44A2732DC1FC87CC0D75FFDBC /* JSONObjectPayload.swift in Sources */,
+				64B11990DA8219D89F1B461F152AD7C4 /* JWK+RSA.swift in Sources */,
+				65DC7C253AF8B788060E075BE0361CE4 /* JWKS.swift in Sources */,
+				7EBE0811DC1EAD17F77C215B9C947AD3 /* JWT+Header.swift in Sources */,
+				F37A2562B151944CA11D1FB301960092 /* JWTAlgorithm.swift in Sources */,
+				517B0E3E4B8DDA2146E0ABE98E4056F0 /* Loggable.swift in Sources */,
+				5196469986E989B0EB9B79E3147D3135 /* Logger.swift in Sources */,
+				51C375A6535E90C3B0B25E5F202D3633 /* Management.swift in Sources */,
+				A3064897B75EA4E5FC3EF621FBAF1AE1 /* ManagementError.swift in Sources */,
+				AC50852D20A734D773303A8241B5D7D7 /* MobileWebAuth.swift in Sources */,
+				D14565D8AFBB62689527C64EB6A3F549 /* NativeAuth.swift in Sources */,
+				7B0301BE403E370E66BE4A9AC6E5FE55 /* NSData+URLSafe.swift in Sources */,
+				7A04A0BAFFDCB228CFB7C6F788878658 /* NSError+Helper.swift in Sources */,
+				1BDE27C129F6F6EA41772110B258BCC5 /* NSURL+Auth0.swift in Sources */,
+				F4C39C93E517EA4240DE2835FACA606A /* NSURLComponents+OAuth2.swift in Sources */,
+				11B7E11F32F78A519DCDBE7A0896BB82 /* OAuth2Grant.swift in Sources */,
+				C666207700DF07370E1F42C18B1D4B32 /* Optional+DebugDescription.swift in Sources */,
+				BDE9E42862D361E28F11D6F37088FAF6 /* Profile.swift in Sources */,
+				F1318B96FB75306B2A560071AC2C38C3 /* Request.swift in Sources */,
+				C07ACEE9007793D523134B950A968E0D /* Requestable.swift in Sources */,
+				3F9131B74E895DB6CB4758011A535F76 /* Response.swift in Sources */,
+				27178CCB7E325184B06725C45E09B2AB /* ResponseType.swift in Sources */,
+				3AC556C5A01820D8AE91238C1BA6F2CD /* Result.swift in Sources */,
+				44034803D11EA643D4D87526CCB1FB39 /* SafariSession.swift in Sources */,
+				8B2988E386A2A14A5B6D2F3B1F0204D2 /* SessionCallbackTransaction.swift in Sources */,
+				CD57193827E7CEC17C5DC7657856B3C6 /* SessionTransaction.swift in Sources */,
+				25B90CE11328EB9B95C9544B354B18BB /* SilentSafariViewController.swift in Sources */,
+				29DC39BCEF8F20F98DBB5C97AF901F4F /* String+URLSafe.swift in Sources */,
+				2AEF5D670564735B0B90D4B6F5B4D7CF /* Telemetry.swift in Sources */,
+				EF489123614FA99F077D7FF840E9F0D5 /* TransactionStore.swift in Sources */,
+				44BF50427D726EDE2D39DAEA2F251CF4 /* UIApplication+Shared.swift in Sources */,
+				1C5CDC0A5519701CD6150BBBC2E72B0A /* UserInfo.swift in Sources */,
+				B54FF26F8316EF3F1142AD9AE1981882 /* UserPatchAttributes.swift in Sources */,
+				DA7A4F9E64BCF8CFCB824F83FBC9B006 /* Users.swift in Sources */,
+				39EC05BD73BE071606B2434324DFF966 /* WebAuthenticatable.swift in Sources */,
+				0D3B7B9021EAACF9E0B360848834A5C2 /* WebAuthError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		063423A7E5A2318255CEACD753C8DD68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SpaceFlightNews";
+			target = DC65C6D1A0272356836056789304E4B0 /* Pods-SpaceFlightNews */;
+			targetProxy = CD72107DD2FA08461172613D7F87D0EF /* PBXContainerItemProxy */;
+		};
+		2BDD0238D2B84225D34A8601023CE69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Auth0;
+			target = D6A440A37D50015E369921294617C612 /* Auth0 */;
+			targetProxy = C966E98AAA15EC62369F101F0F939FDD /* PBXContainerItemProxy */;
+		};
+		2D72A228F7E5C3D290C1945602305863 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JWTDecode;
+			target = 22E1F0E7CBECE226FC294E79C21B0033 /* JWTDecode */;
+			targetProxy = 3AD7C2050EC239B8EA8569F80BDD4CEC /* PBXContainerItemProxy */;
+		};
+		7EA6D452B60B1C9488826E413A36796A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JWTDecode;
+			target = 22E1F0E7CBECE226FC294E79C21B0033 /* JWTDecode */;
+			targetProxy = 306391252E57641616DFB8DF3357C5D2 /* PBXContainerItemProxy */;
+		};
+		81C5E93703D4EFD9E99F352A49B70D8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = 192AEFA366AAFE1F45B918C022FE489C /* SimpleKeychain */;
+			targetProxy = 6E9DA3CF31269487C4BA3F5A3B64E9E3 /* PBXContainerItemProxy */;
+		};
+		8D8B368A2F1B612E3FAC0016E2DA6BC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = 192AEFA366AAFE1F45B918C022FE489C /* SimpleKeychain */;
+			targetProxy = 3BB8D4551223D54CA2E670C0074509BC /* PBXContainerItemProxy */;
+		};
+		CFB669E48F8B07999EADF0B36763D8E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = 192AEFA366AAFE1F45B918C022FE489C /* SimpleKeychain */;
+			targetProxy = 5DC3D4C68668E0D1A136CF2BCB391D72 /* PBXContainerItemProxy */;
+		};
+		DCC5AE4849A2CD90C1615433AEEAF9B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JWTDecode;
+			target = 22E1F0E7CBECE226FC294E79C21B0033 /* JWTDecode */;
+			targetProxy = AB8F75F170D70B71F427A49AE488070A /* PBXContainerItemProxy */;
+		};
+		F58ED8B2C0C0256EBB16C8EE93F70111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Auth0;
+			target = D6A440A37D50015E369921294617C612 /* Auth0 */;
+			targetProxy = A60538B5D20AF2A2F4A3DE255773863D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FE9E169FFC9FC365D98C50D9A4735F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D2531244061C2A1806CD8730BAFC3D /* SimpleKeychain.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKeychain/SimpleKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain.modulemap";
+				PRODUCT_MODULE_NAME = SimpleKeychain;
+				PRODUCT_NAME = SimpleKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EBBF5212A1796925CEC5590D38B621D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04305A1C44016E80B0DC6A5844753B97 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpaceFlightNews-SpaceFlightNewsUITests/Pods-SpaceFlightNews-SpaceFlightNewsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpaceFlightNews-SpaceFlightNewsUITests/Pods-SpaceFlightNews-SpaceFlightNewsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		638A70287A533ADDF19B14818704C3BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42576BCA4A469AFD9E6BD032CE2FB92C /* JWTDecode.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JWTDecode/JWTDecode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JWTDecode/JWTDecode-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JWTDecode/JWTDecode.modulemap";
+				PRODUCT_MODULE_NAME = JWTDecode;
+				PRODUCT_NAME = JWTDecode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		69669C90CCEFCD03F3B04DB1A3D563B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BF0A3B046FA4728ABE018F55E47E87 /* Pods-SpaceFlightNews-SpaceFlightNewsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpaceFlightNews-SpaceFlightNewsUITests/Pods-SpaceFlightNews-SpaceFlightNewsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpaceFlightNews-SpaceFlightNewsUITests/Pods-SpaceFlightNews-SpaceFlightNewsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6C0836119CED10BC11FB3DE882F282E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E2C55A4EC775FA300C2323DDAB0045 /* JWTDecode.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JWTDecode/JWTDecode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JWTDecode/JWTDecode-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JWTDecode/JWTDecode.modulemap";
+				PRODUCT_MODULE_NAME = JWTDecode;
+				PRODUCT_NAME = JWTDecode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		78F4FEAF18BF0E9A1A2975CF511175B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35FB80469D838C9E3660736FE5978F42 /* Auth0.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Auth0/Auth0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Auth0/Auth0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Auth0/Auth0.modulemap";
+				PRODUCT_MODULE_NAME = Auth0;
+				PRODUCT_NAME = Auth0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86A1397081F24948348741ED576DC9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C0F270631B0AFD422F0FF40F462E57 /* Pods-SpaceFlightNews.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpaceFlightNews/Pods-SpaceFlightNews-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpaceFlightNews/Pods-SpaceFlightNews.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ACBBF2E3F132549B961E823B6A0C6DE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC691EDDBD3E54D7B303C6C453698E0 /* Pods-SpaceFlightNews.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpaceFlightNews/Pods-SpaceFlightNews-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpaceFlightNews/Pods-SpaceFlightNews.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADA6937201E1AE24C78B97036FDB0B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD9FE2443FD44343C00A0A9F472F9D6 /* Pods-SpaceFlightNewsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpaceFlightNewsTests/Pods-SpaceFlightNewsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpaceFlightNewsTests/Pods-SpaceFlightNewsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEA29A1CB6E3C05F3854C8A88AD13B2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11FEC3353834722630EEAB6199647B38 /* Auth0.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Auth0/Auth0-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Auth0/Auth0-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Auth0/Auth0.modulemap";
+				PRODUCT_MODULE_NAME = Auth0;
+				PRODUCT_NAME = Auth0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E15800BD5E24BEC0E7C2B4382BBBA0DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 764E510ADB6B548BAA3F8BAD7EB0E49C /* Pods-SpaceFlightNewsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SpaceFlightNewsTests/Pods-SpaceFlightNewsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SpaceFlightNewsTests/Pods-SpaceFlightNewsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F2A5D036A66C3D1D709E03802852204A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3E746FB2B40BD60709ADCAB77AA151C /* SimpleKeychain.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKeychain/SimpleKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain.modulemap";
+				PRODUCT_MODULE_NAME = SimpleKeychain;
+				PRODUCT_NAME = SimpleKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E0826ED75CD423A99E41DE7E3C60AA1 /* Build configuration list for PBXNativeTarget "Pods-SpaceFlightNews-SpaceFlightNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EBBF5212A1796925CEC5590D38B621D /* Debug */,
+				69669C90CCEFCD03F3B04DB1A3D563B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FE8EDED97A1350D202962209B77F114 /* Build configuration list for PBXNativeTarget "SimpleKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE9E169FFC9FC365D98C50D9A4735F6 /* Debug */,
+				F2A5D036A66C3D1D709E03802852204A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F284A83558248AF49153218E2812F14 /* Build configuration list for PBXNativeTarget "Pods-SpaceFlightNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA6937201E1AE24C78B97036FDB0B29 /* Debug */,
+				E15800BD5E24BEC0E7C2B4382BBBA0DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B949BAF43DD16FE21141EA56A2A3B1F0 /* Build configuration list for PBXNativeTarget "Auth0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEA29A1CB6E3C05F3854C8A88AD13B2C /* Debug */,
+				78F4FEAF18BF0E9A1A2975CF511175B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA38029C9CE5BCFDF9BEC3613BD2CD83 /* Build configuration list for PBXNativeTarget "JWTDecode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C0836119CED10BC11FB3DE882F282E6 /* Debug */,
+				638A70287A533ADDF19B14818704C3BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF11C934E2A0544916054FD78BF3DAF2 /* Build configuration list for PBXNativeTarget "Pods-SpaceFlightNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBBF2E3F132549B961E823B6A0C6DE1 /* Debug */,
+				86A1397081F24948348741ED576DC9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
